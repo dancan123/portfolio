@@ -160,6 +160,16 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-decoration: none;
+    margin-top: -13px;
+}
+    .logo-img
+{
+height: 90px;
+position: left;
+width: 100px; 
+margin-left: -650px;
+border-radius: 40px;
+margin-bottom: -10%;
 }
 
 .nav-menu {
@@ -272,6 +282,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
     text-align: center;
     max-width: 900px;
+    
 }
 
 .hero-image-wrapper {
@@ -279,12 +290,13 @@ h1, h2, h3, h4, h5, h6 {
     width: 200px;
     height: 200px;
     margin: 0 auto 2rem;
+    border-radius: 200%;
 }
 
 .hero-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+    width: 110%;
+    height: 115%;
+    border-radius: 35%;
     object-fit: cover;
     border: 4px solid var(--surface);
     box-shadow: 0 10px 40px rgba(0, 119, 182, 0.3);
@@ -293,10 +305,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-image-glow {
     position: absolute;
-    inset: -20px;
+    inset: -60px;
     background: linear-gradient(135deg, var(--primary), var(--primary-light));
-    border-radius: 50%;
-    filter: blur(30px);
+    border-radius: 80%;
+    filter: blur(20px);
     opacity: 0.5;
     z-index: -1;
     animation: pulse 3s infinite;
@@ -1056,4 +1068,416 @@ h1, h2, h3, h4, h5, h6 {
     .container {
         padding: 0 1rem;
     }
+
 }
+/* ===== DATASETS SECTION ===== */
+.datasets {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.datasets .section-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.datasets .section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dataset-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.dataset-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: left;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.dataset-card:hover {
+  transform: translateY(-5px);
+}
+
+.dataset-info h3 {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.dataset-info p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.dataset-format {
+  margin-bottom: 1rem;
+}
+
+.format {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-right: 0.5rem;
+}
+
+.format-btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  cursor: default;
+  margin-right: 5px;
+}
+
+.download-btn {
+  background: #00b894;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+  
+}
+
+.download-btn:hover {
+  background: #019874;
+}
+
+.download-count {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+
+footer {
+  background-color: #2d07da;
+  color: white;
+  text-align: center;
+  padding: 05px 0;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #1e90ff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #25e304;
+}
+
+
+.contact-section {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  text-align: left;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #0a0a0a;
+}
+
+.contact-section p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  background: rgb(50, 7, 243);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #deaaaa;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.send-btn {
+  width: 100%;
+  background-color: #850ab6;
+  color: rgb(125, 119, 165);
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #07ec26;
+}
+
+.form-status {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #28a745;
+}
+/*start-- contact box styling */
+.contact-section {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #0a0a0a;
+}
+
+.contact-section p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.send-btn {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #0056b3;
+}
+
+.form-status {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #28a745;
+}
+
+/*END-- contact box styling */
+
+.download-btn {
+    /* Main Button Styling */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px; /* Makes it rounded */
+    background-color: #007bff; /* Attractive Blue Color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Important for the <a> wrapper */
+}
+
+/* Hover Effect */
+.download-btn:hover {
+    background-color: #0056b3; /* Darker Blue on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Text inside the button */
+.button-text {
+    margin-right: 15px; /* Spacing between text and counter */
+}
+
+/* Counter Styling */
+.counter {
+    background-color: #ffc107; /* Bright Yellow/Amber for contrast */
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+    min-width: 25px; /* Ensures it looks like a pill/circle */
+    text-align: center;
+}
+/* Start CV download section */
+/* --- EXISTING BUTTON STYLES (from previous answer) --- */
+.download-btn {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;              
+  background: #5529c4;
+  color: #fff;
+  border: none;
+  width: 280px;              /* increase button width */
+  height: 105px;              /* increase button height */
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;           /* slightly larger text */
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+.download-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.button-text { margin-right: 15px; }
+.counter {
+    background-color: #ffc107;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+    min-width: 25px;
+    text-align: center;
+}
+
+/* --- NEW MODAL STYLES --- */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* High z-index to be on top of everything */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 400px;
+    position: relative;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Form Styling */
+#download-form input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#submit-button {
+    width: 95%;
+    background-color: #28a745; /* Green for submission */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#submit-button:hover {
+    background-color: #1e7e34;
+}
+
+/* Success Modal Specific Styling */
+.success-content {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+.success-content h2 { color: #155724; }
+.success-content .close-btn { color: #155724; }
+/* End CV download section */

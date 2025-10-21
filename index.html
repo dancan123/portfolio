@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dancan Mbaabu - Data Analyst Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Theme Toggle -->
+    <!-- Theme Toggle Button - Fixed position for easy access -->
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
         <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="5"></circle>
@@ -28,10 +30,11 @@
         </svg>
     </button>
 
-    <!-- Navigation -->
+    <!-- Navigation Bar - Sticky header with glassmorphism effect -->
     <nav class="nav" id="nav">
         <div class="nav-container">
-            <a href="#home" class="nav-logo">DM</a>
+            <a href="#home" class="nav-logo">DANCAN MBAABU</a>
+             <img src="/Assets/Dancan_1.jpg" alt="DM Logo" class="logo-img">
             <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
@@ -48,7 +51,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section - Main landing area with animated background -->
     <section id="home" class="hero">
         <div class="hero-background">
             <div class="gradient-orb orb-1"></div>
@@ -62,12 +65,20 @@
             </div>
             <h1 class="hero-title">
                 <span class="hero-greeting">Hello, I am</span>
-                <span class="hero-name">Dancan Mbaabu</span>
+                <span class="hero-name">DANCAN MBAABU</span>
             </h1>
             <p class="hero-subtitle">Data Analyst & Machine Learning Enthusiast</p>
             <p class="hero-description">
-                Transforming raw data into actionable insights through Python, Data Visualization, 
-                and Machine Learning. Passionate about uncovering patterns that drive business decisions.
+                
+I am a dedicated Data Analyst and Machine Learning enthusiast,
+skilled in transforming raw, unstructured data into clear, 
+actionable insights. With expertise in Python, 
+data visualization, and predictive modeling,
+I specialize in uncovering meaningful patterns, 
+that support evidence-based business decisions,
+improve efficiency, and inspire innovation through
+data-driven strategies.
+
             </p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -81,11 +92,47 @@
             </div>
         </div>
     </section>
+    
+<!-- Start CV downlaod section -->
+<button id="download-button" class="download-btn">
+    <span class="button-text">Download Dancan's CV</span>
+    <span id="click-counter" class="counter">0</span>
+</button>
 
-    <!-- About Section -->
+<div id="contact-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Download Dancan's CV</h2>
+        <p>Please enter your details to receive Dancan's CV immediately.</p>
+        
+        <form id="download-form">
+            <input type="email" id="email-input" placeholder="Your Email Address" required>
+            <input type="tel" id="mobile-input" placeholder="Mobile Number (Optional)">
+            <button type="submit" id="submit-button">Submit & Download</button>
+        </form>
+    </div>
+</div>
+
+<div id="success-modal" class="modal">
+    <div class="modal-content success-content">
+        <h2>Success!</h2>
+        <p>Your CV is downloaded now. Check your downloads folder.</p>
+        <button class="close-btn">Close</button>
+    </div>
+</div>
+
+<a href="/Assets/CURRICULUM VITAE - DANCAN MBAABU.pdf" download id="actual-download-link" style="display: none;"></a>
+<script src="script.js"></script>
+
+<script src="script.js"></script>
+
+<!-- End CV downlaod section -->
+ 
+    <!-- About Section - Professional background and skills -->
     <section id="about" class="about section">
             <h2 class="section-title">About Me</h2>
             <div class="about-grid">
+                <!-- Education Card -->
                 <div class="about-card glass-card">
                     <div class="about-card-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -95,7 +142,37 @@
                     </div>
                     <h3>Education</h3>
                     <p>Graduate in Mathematics and Computer Science, specializing in Data Analysis and Data Science</p>
+                    <div style="background-color:#e0f2ff; padding:20px; border-radius:10px; max-width:700px; margin:20px 0; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+    <h3 style="color:#1E3A8A; margin-bottom:15px;"></h3>
+    
+    <div style="margin-bottom:15px;">
+        <strong>BSc. Mathematics and Computer Science (Applied Mathematics)</strong>
+        <p>Taita Taveta University,2024</p>
+    </div>
+
+    <div style="margin-bottom:15px;">
+        <strong>Diploma in Mathematics</strong>
+        <p>Alison University, 2019</p>
+    </div>
+
+    <div style="margin-bottom:15px;">
+        <strong>Certificate in Criminology and Justice</strong>
+        <p>Alison University, 2019</p>
+    </div>
+
+    <div style="margin-bottom:15px;">
+        <strong>High School Education</strong>
+        <p>Mutewa Highschool,2018</p>
+    </div>
+
+    <div style="margin-bottom:15px;">
+        <strong>Primary School Education</strong>
+        <p>Mutewa Pry School,2014</p>
+    </div>
+</div>
+
                 </div>
+                <!-- Technical Skills Card -->
                 <div class="about-card glass-card">
                     <div class="about-card-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -105,7 +182,44 @@
                     </div>
                     <h3>Technical Skills</h3>
                     <p>Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Jupyter Notebook, SQL</p>
+                    <div style="background-color:#e0f2ff; padding:20px; border-radius:10px; max-width:700px; margin:20px 0; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+    <h3 style="color:#1E3A8A; margin-bottom:15px;"></h3>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Python:</strong> A versatile programming language used for data analysis and automation. Ideal for scripting and building analytical models.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Pandas:</strong> Library for data manipulation and analysis. Makes handling large datasets fast and efficient.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>NumPy:</strong> Supports numerical computing with arrays and matrices. Useful for fast mathematical operations.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Matplotlib:</strong> Library for creating static visualizations. Helps in plotting graphs and charts for data interpretation.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Seaborn:</strong> Statistical data visualization library. Builds on Matplotlib to create attractive charts quickly.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Scikit-learn:</strong> Machine learning library for Python. Provides tools for modeling, prediction, and data preprocessing.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Jupyter Notebook:</strong> Interactive coding environment. Allows running code and visualizing results inline.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>SQL:</strong> Language for managing and querying databases. Enables extraction and analysis of structured data efficiently.
+    </div>
+</div>
+
                 </div>
+                <!-- Expertise Card -->
                 <div class="about-card glass-card">
                     <div class="about-card-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -115,9 +229,34 @@
                     </div>
                     <h3>Expertise</h3>
                     <p>Data Visualization, Machine Learning, Statistical Analysis, Predictive Modeling, ETL Processes</p>
+                    <div style="background-color:#e0f2ff; padding:20px; border-radius:10px; max-width:700px; margin:20px 0; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+    <h3 style="color:#1E3A8A; margin-bottom:15px;">Advanced Data Skills</h3>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Data Visualization:</strong> The art of representing data visually using charts and graphs. Helps communicate insights clearly to stakeholders.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Machine Learning:</strong> Techniques that enable systems to learn patterns from data. Useful for predictions, classification, and automation.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Statistical Analysis:</strong> Application of statistical methods to interpret data. Helps identify trends, relationships, and make informed decisions.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Predictive Modeling:</strong> Using historical data to forecast future outcomes. Supports strategic planning and business decision-making.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>ETL Processes:</strong> Extract, Transform, Load workflows for handling data. Ensures data is clean, structured, and ready for analysis.
+    </div>
+</div>
+
                 </div>
             </div>
             
+            <!-- start- core - competencies Bars -->
             <div class="skills-section">
                 <h3 class="skills-title">Core Competencies</h3>
                 <div class="skills-grid">
@@ -160,15 +299,48 @@
                 </div>
             </div>
         </div>
+        <div style="background-color:#e0f2ff; padding:20px; border-radius:10px; max-width:700px; margin:20px auto; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+    <h3 style="color:#1E3A8A; margin-bottom:15px; text-align:center;">Core Values</h3>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Integrity:</strong> I maintain honesty and transparency in all tasks. Ensuring ethical standards in data handling and reporting.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Continuous Learning:</strong> Committed to upskilling and staying updated with new technologies. Adapting to emerging trends in data science and IT.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Analytical Thinking:</strong> Skilled at examining complex data to derive actionable insights. Focused on problem-solving and informed decision-making.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Collaboration:</strong> Works effectively in teams and values shared success. Supports colleagues in achieving common goals.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Professionalism:</strong> Delivers high-quality work and respects timelines. Maintains a positive and accountable work ethic.
+    </div>
+    
+    <div style="margin-bottom:10px;">
+        <strong>Innovation:</strong> Enjoys designing solutions and improving processes. Applies creative thinking to solve real-life problems.
+    </div>
+</div>
+
+
+
+    
+        <!-- End  core - competencies Bars -->
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section - Portfolio showcase -->
     <section id="projects" class="projects section">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <p class="section-subtitle">Showcasing real-world data analysis and machine learning solutions</p>
             
             <div class="projects-grid">
+                <!-- Featured Project - Takes full width -->
                 <div class="project-card glass-card project-large">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1587401511935-a7f87afadf2f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHwxfHxkYXRhJTIwdmlzdWFsaXphdGlvbiUyMGRhc2hib2FyZCUyMGFuYWx5dGljcyUyMGNoYXJ0c3xlbnwwfDB8fGJsdWV8MTc2MDM1NjcyOHww&ixlib=rb-4.1.0&q=85" alt="Mobile Transactions EDA - KOBU Agency on Unsplash" style="width: 100%; height: 100%; object-fit: cover;">
@@ -188,6 +360,7 @@
                     </div>
                 </div>
 
+                <!-- Project Card 2 -->
                 <div class="project-card glass-card">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1660020619062-70b16c44bf0f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHw1fHxkYXRhJTIwdmlzdWFsaXphdGlvbiUyMGRhc2hib2FyZCUyMGFuYWx5dGljcyUyMGNoYXJ0c3xlbnwwfDB8fGJsdWV8MTc2MDM1NjcyOHww&ixlib=rb-4.1.0&q=85" alt="IRCAP Platform - 2H Media on Unsplash" style="width: 100%; height: 100%; object-fit: cover;">
@@ -205,7 +378,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- End Project Card 2-->
 
+                <!-- Start Project Card 3 -->
                 <div class="project-card glass-card">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1614064745091-88275f86c5ef?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHwzfHxtb25pdG9yaW5nJTIwZGV0ZWN0aW9uJTIwbmV0d29yayUyMHNlY3VyaXR5JTIwZGF0YXxlbnwwfDB8fHJlZHwxNzYwMzU2NzI4fDA&ixlib=rb-4.1.0&q=85" alt="Anomaly Detection - FlyD on Unsplash" style="width: 100%; height: 100%; object-fit: cover;">
@@ -223,7 +398,9 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- End Project Card 3 -->
+                
+                <!-- Start Project Card 4 -->
                 <div class="project-card glass-card">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1717501218390-6b59431c9284?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbWFjaGluZSUyMGxlYXJuaW5nJTIwdGVjaG5vbG9neSUyMG5ldXJhbCUyMG5ldHdvcmt8ZW58MHwwfHxwdXJwbGV8MTc2MDM1NjcyOHww&ixlib=rb-4.1.0&q=85" alt="AI Fraud Detection - Google DeepMind on Unsplash" style="width: 100%; height: 100%; object-fit: cover;">
@@ -241,17 +418,39 @@
                         </div>
                     </div>
                 </div>
+                 <!--end Project Card 4 -->
+
+                <!-- Start Project Card 5 -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1717501218390-6b59431c9284?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbWFjaGluZSUyMGxlYXJuaW5nJTIwdGVjaG5vbG9neSUyMG5ldXJhbCUyMG5ldHdvcmt8ZW58MHwwfHxwdXJwbGV8MTc2MDM1NjcyOHww&ixlib=rb-4.1.0&q=85" alt="AI Fraud Detection - Google DeepMind on Unsplash" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details →</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Agentic AI Fraud Detection</h3>
+                        <p>Intelligent multi-agent system leveraging AI to identify and prevent fraudulent activities in financial transactions.</p>
+                        <div class="project-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Fraud Detection</span>
+                            <span class="tag">Neural Networks</span>
+                        </div>
+                    </div>
+                    <!--End Project Card 5 -->
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Articles Section -->
+    <!-- Articles Section - Blog and tutorials -->
     <section id="articles" class="articles section">
         <div class="container">
             <h2 class="section-title">Latest Articles</h2>
             <p class="section-subtitle">Insights and tutorials on data science and analytics</p>
             
             <div class="articles-grid">
+                <!-- Featured Article -->
                 <div class="article-featured glass-card">
                     <div class="article-image">
                         <img src="https://images.unsplash.com/photo-1593720219128-218edc93bdc0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHwyfHxwcm9ncmFtbWluZyUyMGNvZGUlMjBweXRob24lMjBkYXRhJTIwc2NpZW5jZSUyMHdvcmtzcGFjZXxlbnwwfDB8fGJsdWV8MTc2MDM1NjcyOHww&ixlib=rb-4.1.0&q=85" alt="Featured Article - Ferenc Almasi on Unsplash" style="width: 100%; height: 100%; object-fit: cover;">
@@ -273,6 +472,7 @@
                     </div>
                 </div>
 
+                <!-- Article Card 1 -->
                 <div class="article-card glass-card">
                     <h4>Machine Learning Model Deployment Best Practices</h4>
                     <p>Learn how to deploy your ML models to production with confidence and reliability.</p>
@@ -282,6 +482,7 @@
                     </div>
                 </div>
 
+                <!-- Article Card 2 -->
                 <div class="article-card glass-card">
                     <h4>Data Visualization: Telling Stories with Charts</h4>
                     <p>Master the art of creating compelling visualizations that communicate insights effectively.</p>
@@ -291,6 +492,7 @@
                     </div>
                 </div>
 
+                <!-- Article Card 3 -->
                 <div class="article-card glass-card">
                     <h4>Understanding Statistical Significance in A/B Testing</h4>
                     <p>A comprehensive guide to interpreting statistical results in experimental design.</p>
@@ -302,233 +504,164 @@
             </div>
         </div>
     </section>
+    <!-- DATASETS -->
+     <section id="datasets" class="datasets section">
+  <div class="container">
+    <h2 class="section-title">Datasets</h2>
+    <p class="section-subtitle">Explore and download datasets I’ve used in analytics and machine learning projects.</p>
 
-    <!-- Datasets Section -->
-    <section id="datasets" class="datasets section">
-        <div class="container">
-            <h2 class="section-title">Public Datasets</h2>
-            <p class="section-subtitle">Curated datasets for research and learning</p>
-            
-            <div class="datasets-grid">
-                <div class="dataset-card glass-card">
-                    <div class="dataset-header">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                        </svg>
-                        <h3>Mobile Transaction Dataset</h3>
-                    </div>
-                    <p>Comprehensive dataset of mobile payment transactions with anonymized user data and transaction patterns.</p>
-                    <div class="dataset-stats">
-                        <span class="stat">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                                <polyline points="13 2 13 9 20 9"></polyline>
-                            </svg>
-                            CSV, 2.5MB
-                        </span>
-                        <span class="stat">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                <polyline points="7 10 12 15 17 10"></polyline>
-                                <line x1="12" y1="15" x2="12" y2="3"></line>
-                            </svg>
-                            1.2K downloads
-                        </span>
-                    </div>
-                    <button class="btn btn-outline">Download Dataset</button>
-                </div>
-
-                <div class="dataset-card glass-card">
-                    <div class="dataset-header">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="3" y1="9" x2="21" y2="9"></line>
-                            <line x1="9" y1="21" x2="9" y2="9"></line>
-                        </svg>
-                        <h3>Revenue Analytics Dataset</h3>
-                    </div>
-                    <p>Historical revenue data with seasonal patterns, trends, and forecasting features for time series analysis.</p>
-                    <div class="dataset-stats">
-                        <span class="stat">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                                <polyline points="13 2 13 9 20 9"></polyline>
-                            </svg>
-                            JSON, 1.8MB
-                        </span>
-                        <span class="stat">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                <polyline points="7 10 12 15 17 10"></polyline>
-                                <line x1="12" y1="15" x2="12" y2="3"></line>
-                            </svg>
-                            856 downloads
-                        </span>
-                    </div>
-                    <button class="btn btn-outline">Download Dataset</button>
-                </div>
-
-                <div class="dataset-card glass-card">
-                    <div class="dataset-header">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                        </svg>
-                        <h3>Fraud Detection Dataset</h3>
-                    </div>
-                    <p>Labeled dataset for training fraud detection models with various transaction features and fraud indicators.</p>
-                    <div class="dataset-stats">
-                        <span class="stat">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                                <polyline points="13 2 13 9 20 9"></polyline>
-                            </svg>
-                            CSV, 4.2MB
-                        </span>
-                        <span class="stat">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                <polyline points="7 10 12 15 17 10"></polyline>
-                                <line x1="12" y1="15" x2="12" y2="3"></line>
-                            </svg>
-                            2.1K downloads
-                        </span>
-                    </div>
-                    <button class="btn btn-outline">Download Dataset</button>
-                </div>
-            </div>
+    <div class="dataset-grid">
+      <!-- Dataset Card 1 -->
+      <div class="dataset-card glass-card">
+        <div class="dataset-info">
+          <h3>Mobile Transactions Dataset</h3>
+          <p>A synthetic dataset containing 200 rows × 20 columns of mobile financial transactions, ideal for fraud detection and EDA.</p>
+          <div class="dataset-format">
+            <span class="format">Formats:</span>
+            <button class="format-btn">CSV</button>
+            <button class="format-btn">XLSX</button>
+          </div>
         </div>
-    </section>
+        <div class="dataset-actions">
+          <button class="download-btn" data-file="mobile_transactions.csv">⬇ Download</button>
+          <span class="download-count" id="count-mobile">0 Downloads</span>
+        </div>
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Let us discuss your data analytics needs</p>
-            
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-card glass-card">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        <h3>Email</h3>
-                        <p>dancanmbaabu1@gmail.com</p>
-                    </div>
+      <!-- Dataset Card 2 -->
+      <div class="dataset-card glass-card">
+        <div class="dataset-info">
+          <h3>Customer Churn Dataset</h3>
+          <p>Simulated telco customer churn dataset used for predictive analytics and classification tasks.</p>
+          <div class="dataset-format">
+            <span class="format">Formats:</span>
+            <button class="format-btn">CSV</button>
+            <button class="format-btn">JSON</button>
+          </div>
+        </div>
+        <div class="dataset-actions">
+          <button class="download-btn" data-file="customer_churn.csv">⬇ Download</button>
+          <span class="download-count" id="count-churn">0 Downloads</span>
+        </div>
+      </div>
 
-  <div class="contact-grid">
-    <div class="contact-card glass-card">
-      <!-- Phone Icon -->
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.09 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-      </svg>
-      <h3>Phone</h3>
-      <p>
-        <a href="tel:+254746908674" class="contact-link">+254 746 908 674</a>
-      </p>
+      <!-- Dataset Card 3 -->
+      <div class="dataset-card glass-card">
+        <div class="dataset-info">
+          <h3>Sales and Profit Dataset</h3>
+          <p>Dataset showing regional sales performance, revenue, and profit margins over time.</p>
+          <div class="dataset-format">
+            <span class="format">Formats:</span>
+            <button class="format-btn">CSV</button>
+            <button class="format-btn">Excel</button>
+          </div>
+        </div>
+        <div class="dataset-actions">
+          <button class="download-btn" data-file="sales_profit.csv">⬇ Download</button>
+          <span class="download-count" id="count-sales">0 Downloads</span>
+        </div>
+      </div>
     </div>
   </div>
+</section>
+
+<!-- startContact -->
+<section id="contact" class="contact-section" style="display: flex; gap: 30px; align-items: flex-start; padding: 40px 20px;">
+
+  <!-- Map / Location Bar on the left -->
+  <div style="flex: 1; min-width: 300px;">
+    <h3>Our Location</h3>
+    <p>Nairobi, Kenya</p>
+    <!-- Google Maps embed -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.123456!2d36.8219!3d-1.2921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10a0a0a0a0a0%3A0xabcdef1234567890!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus"
+      width="100%"
+      height="350"
+      style="border:0; border-radius: 8px;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- Existing Contact Form (right) -->
+  <div style="flex: 1; min-width: 300px;">
+    <h2>Contact Me</h2>
+    <p>
+      <strong>Make your data to be impactful reality. Have a question, opportunity, or project in mind? I would love to hear from you. Let us connect to transform your datasets into valuable assets.</strong>
+    </p>
+
+    <form
+      action="https://formspree.io/f/mdkwjekb"
+      method="POST"
+      class="contact-form"
+      id="contact-form"
+    >
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Mobile Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Message subject" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+      </div>
+
+      <button type="submit" class="send-btn">Send Message</button>
+      <p id="form-status" class="form-status"></p>
+    </form>
+  </div>
+
+</section>
+
+ 
+<!--end  Contact Section -->
+
+<footer>
+  <div class="footer-container">
+    <p>&copy; 2025 Dancan Mbaabu | Data Analyst Portfolio</p>
+    <p>Made with ❤️ in Kenya</p>
+  <div class="footer-links" style="text-align:center; margin-top:20px;">
+  <a href="#contact" 
+     style="display:inline-block; background-color:#0078ff; color:white; text-decoration:none; 
+            padding:10px 18px; border-radius:6px; margin:5px; font-weight:bold; 
+            transition:background-color 0.3s;">
+    Contact
+  </a>
+  
+  <a href="https://www.linkedin.com/in/dancan-mbaabu-168742369/" target="_blank"
+     style="display:inline-block; background-color:#0a66c2; color:white; text-decoration:none; 
+            padding:10px 18px; border-radius:6px; margin:5px; font-weight:bold; 
+            transition:background-color 0.3s;">
+    LinkedIn
+  </a>
+  
+  <a href="https://github.com/dancan123" target="_blank"
+     style="display:inline-block; background-color:#333; color:white; text-decoration:none; 
+            padding:10px 18px; border-radius:6px; margin:5px; font-weight:bold; 
+            transition:background-color 0.3s;">
+    GitHub
+  </a>
 </div>
 
-                    <div class="contact-card glass-card">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                        <h3>Location</h3>
-                        <p>Available for remote work</p>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/dancan-mbaabu-168742369/" class="social-link" aria-label="LinkedIn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
-                        <a href="https://github.com/dancan123" class="social-link" aria-label="GitHub">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                        <a href="https://x.com/Dancan_Mbaabu_" class="social-link" aria-label="Twitter">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                
-<form 
-  action="https://formspree.io/f/mqaygbve" 
-  method="POST" 
-  class="contact-form glass-card"
-  class =" glass-card">
-
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required placeholder="Your name">
   </div>
+</footer>
 
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-  </div>
 
-  <div class="form-group">
-    <label for="subject">Subject</label>
-    <input type="text" id="subject" name="subject" required placeholder="Project inquiry">
-  </div>
-
-  <div class="form-group">
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
-  </div>
-
-  <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-</form>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Dancan Mbaabu</h3>
-                    <p>Data Analyst passionate about transforming data into actionable insights.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <a href="#articles">Articles</a>
-                    <a href="#datasets">Datasets</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Resume</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Dancan Mbaabu. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="18 15 12 9 6 15"></polyline>
-        </svg>
-    </button>
-
-    <script src="script.js"></script>
-</body>
+</body> 
 </html>
