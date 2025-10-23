@@ -1481,3 +1481,243 @@ footer {
 .success-content h2 { color: #155724; }
 .success-content .close-btn { color: #155724; }
 /* End CV download section */
+
+/* Start button to turn the website Either dark or Bright*/
+:root {
+  --background: #ffffff;
+  --text-color: #000000;
+  --primary: #007bff;
+}
+
+body.dark-mode {
+  --background: #0f172a;
+  --text-color: #e2e8f0;
+  --primary: #60a5fa;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* End button to turn the website Either dark or Bright*/
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Make sure all content scales correctly */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Ensure images scale */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container limits on large screens */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navigation responsiveness */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Hero section scaling */
+.hero-content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-size: 2rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--primary-dark);
+}
+
+/* Make buttons and cards scale */
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+/* Grid responsiveness */
+.about-grid,
+.projects-grid,
+.articles-grid,
+.dataset-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* === Mobile (≤768px) === */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-grid,
+  .projects-grid,
+  .articles-grid,
+  .dataset-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card,
+  .about-card,
+  .article-card {
+    width: 100%;
+  }
+}
+
+/* === Tablet (769px–1024px) === */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-grid,
+  .projects-grid,
+  .articles-grid,
+  .dataset-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+
+/* === Laptop and Large Screens (≥1025px) === */
+@media (min-width: 1025px) {
+  .about-grid,
+  .projects-grid,
+  .articles-grid,
+  .dataset-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+/* End RESPONSIVE DESIGN */
+
+@media (min-width: 1600px) {
+  body {
+    font-size: 18px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    padding: 6rem 2rem 8rem;
+    text-align: center;
+    background: var(--surface);
+}
+
+/* Default (Light) */
+:root {
+    --primary: #0077b6;
+    --background: #f8f9fa;
+    --text: #0b1220;
+    --glass-bg: rgba(255, 255, 255, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shadow: rgba(0, 0, 0, 0.1);
+    --transition-smooth: all 0.3s ease;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    --primary: #00b4d8;
+    --background: #0b1220;
+    --text: #f8f9fa;
+    --glass-bg: rgba(0, 0, 0, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: rgba(0, 0, 0, 0.6);
+}
+@keyframes floating {
+    0% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(20px, -20px) scale(1.1); }
+    body {
+    background: var(--background);
+    color: var(--text);
+    transition: var(--transition-smooth);
+}
+body {
+    background: var(--background);
+    color: var(--text);
+    transition: var(--transition-smooth);
+}
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+.contact-section {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 40px 20px;
+  flex-wrap: wrap; /* Allow stacking on small screens */
+}
+
+.contact-left, .contact-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-left iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* Stack vertically on screens smaller than 768px */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 10px;
+  }
+}

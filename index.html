@@ -2,35 +2,54 @@
 <html lang="en">
     
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dancan Mbaabu - Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Theme Toggle Button - Fixed position for easy access -->
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-    </button>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dancan Mbaabu - Data Analyst Portfolio</title>
 
-    <!-- Navigation Bar - Sticky header with glassmorphism effect -->
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- JavaScript -->
+  <script defer src="script.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Start Theme Toggle Button - Fixed position for easy access -->
+     <!-- Theme Toggle Button -->
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+  <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2">
+    <circle cx="12" cy="12" r="5"></circle>
+    <line x1="12" y1="1" x2="12" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="23"></line>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+    <line x1="1" y1="12" x2="3" y2="12"></line>
+    <line x1="21" y1="12" x2="23" y2="12"></line>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+  </svg>
+
+  <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79z"></path>
+  </svg>
+</button>
+
+    <!-- End Theme Toggle Button - Fixed position for easy access -->
+
+    <!-- Start Navigation Bar - Sticky header with glassmorphism effect -->
     <nav class="nav" id="nav">
         <div class="nav-container">
             <a href="#home" class="nav-logo">DANCAN MBAABU</a>
@@ -50,8 +69,9 @@
             </div>
         </div>
     </nav>
+    <!-- End Navigation Bar - Sticky header with glassmorphism effect -->
 
-    <!-- Hero Section - Main landing area with animated background -->
+    <!-- Start Hero Section - Main landing area with animated background -->
     <section id="home" class="hero">
         <div class="hero-background">
             <div class="gradient-orb orb-1"></div>
@@ -68,16 +88,15 @@
                 <span class="hero-name">DANCAN MBAABU</span>
             </h1>
             <p class="hero-subtitle">Data Analyst & Machine Learning Enthusiast</p>
-            <p class="hero-description">
-                
-I am a dedicated Data Analyst and Machine Learning enthusiast,
-skilled in transforming raw, unstructured data into clear, 
-actionable insights. With expertise in Python, 
-data visualization, and predictive modeling,
-I specialize in uncovering meaningful patterns, 
-that support evidence-based business decisions,
-improve efficiency, and inspire innovation through
-data-driven strategies.
+
+            <p class="hero-description">I am a dedicated Data Analyst and Machine Learning enthusiast,
+                                        skilled in transforming raw, unstructured data into clear, 
+                                        actionable insights. With expertise in Python, 
+                                        data visualization, and predictive modeling,
+                                        I specialize in uncovering meaningful patterns, 
+                                        that support evidence-based business decisions,
+                                        improve efficiency, and inspire innovation through
+                                        data-driven strategies.
 
             </p>
             <div class="hero-cta">
@@ -92,6 +111,7 @@ data-driven strategies.
             </div>
         </div>
     </section>
+    <!-- End Hero Section - Main landing area with animated background -->
     
 <!-- Start CV downlaod section -->
 <button id="download-button" class="download-btn">
@@ -100,6 +120,7 @@ data-driven strategies.
 </button>
 
 <div id="contact-modal" class="modal">
+
     <div class="modal-content">
         <span class="close-btn">&times;</span>
         <h2>Download Dancan's CV</h2>
@@ -123,7 +144,6 @@ data-driven strategies.
 
 <a href="/Assets/CURRICULUM VITAE - DANCAN MBAABU.pdf" download id="actual-download-link" style="display: none;"></a>
 <script src="script.js"></script>
-
 <script src="script.js"></script>
 
 <!-- End CV downlaod section -->
@@ -132,7 +152,7 @@ data-driven strategies.
     <section id="about" class="about section">
             <h2 class="section-title">About Me</h2>
             <div class="about-grid">
-                <!-- Education Card -->
+                <!-- Start Education Card -->
                 <div class="about-card glass-card">
                     <div class="about-card-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -172,7 +192,7 @@ data-driven strategies.
 </div>
 
                 </div>
-                <!-- Technical Skills Card -->
+                <!-- Start Technical Skills Card -->
                 <div class="about-card glass-card">
                     <div class="about-card-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -566,26 +586,22 @@ data-driven strategies.
 </section>
 
 <!-- startContact -->
-<section id="contact" class="contact-section" style="display: flex; gap: 30px; align-items: flex-start; padding: 40px 20px;">
+<section id="contact" class="contact-section">
 
-  <!-- Map / Location Bar on the left -->
-  <div style="flex: 1; min-width: 300px;">
+  <!-- Map / Location Bar -->
+  <div class="contact-left">
     <h3>Our Location</h3>
     <p>Nairobi, Kenya</p>
-    <!-- Google Maps embed -->
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.123456!2d36.8219!3d-1.2921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10a0a0a0a0a0%3A0xabcdef1234567890!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus"
-      width="100%"
-      height="350"
-      style="border:0; border-radius: 8px;"
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
 
-  <!-- Existing Contact Form (right) -->
-  <div style="flex: 1; min-width: 300px;">
+  <!-- Contact Form -->
+  <div class="contact-right">
     <h2>Contact Me</h2>
     <p>
       <strong>Make your data to be impactful reality. Have a question, opportunity, or project in mind? I would love to hear from you. Let us connect to transform your datasets into valuable assets.</strong>
@@ -637,26 +653,54 @@ data-driven strategies.
     <p>&copy; 2025 Dancan Mbaabu | Data Analyst Portfolio</p>
     <p>Made with ❤️ in Kenya</p>
   <div class="footer-links" style="text-align:center; margin-top:20px;">
-  <a href="#contact" 
-     style="display:inline-block; background-color:#0078ff; color:white; text-decoration:none; 
-            padding:10px 18px; border-radius:6px; margin:5px; font-weight:bold; 
-            transition:background-color 0.3s;">
-    Contact
-  </a>
-  
-  <a href="https://www.linkedin.com/in/dancan-mbaabu-168742369/" target="_blank"
-     style="display:inline-block; background-color:#0a66c2; color:white; text-decoration:none; 
-            padding:10px 18px; border-radius:6px; margin:5px; font-weight:bold; 
-            transition:background-color 0.3s;">
-    LinkedIn
-  </a>
-  
-  <a href="https://github.com/dancan123" target="_blank"
-     style="display:inline-block; background-color:#333; color:white; text-decoration:none; 
-            padding:10px 18px; border-radius:6px; margin:5px; font-weight:bold; 
-            transition:background-color 0.3s;">
-    GitHub
-  </a>
+ <!-- Make sure Font Awesome is included in your HTML head -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+<!-- Contact Icon Button -->
+<a href="#contact" 
+   style="display:inline-flex; align-items:center; justify-content:center;
+          background-color:#0078ff; color:white; text-decoration:none; 
+          width:50px; height:50px; border-radius:6px; margin:5px; 
+          font-size:24px; transition:background-color 0.3s;">
+    <i class="fas fa-envelope"></i>
+</a>
+
+ <!-- Make sure Font Awesome is included in your HTML head -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+<!-- LinkedIn Icon Button -->
+<a href="https://www.linkedin.com/in/dancan-mbaabu-168742369/" target="_blank"
+   style="display:inline-flex; align-items:center; justify-content:center;
+          background-color:#0a66c2; color:white; text-decoration:none; 
+          width:50px; height:50px; border-radius:6px; margin:5px; 
+          font-size:24px; transition:background-color 0.3s;">
+    <i class="fab fa-linkedin-in"></i>
+</a>
+
+<!-- Make sure Font Awesome is included in your HTML head -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+<!-- GitHub Icon Button -->
+<a href="https://github.com/dancan123" target="_blank"
+   style="display:inline-flex; align-items:center; justify-content:center;
+          background-color:#333; color:white; text-decoration:none; 
+          width:50px; height:50px; border-radius:6px; margin:5px; 
+          font-size:24px; transition:background-color 0.3s;">
+    <i class="fab fa-github"></i>
+</a>
+
+  <!-- Make sure Font Awesome is included in your HTML head -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+<!-- Twitter Icon Button -->
+<a href="https://x.com/Dancan_Mbaabu_" target="_blank"
+   style="display:inline-flex; align-items:center; justify-content:center;
+          background-color:#0a66c2; color:white; text-decoration:none; 
+          width:50px; height:50px; border-radius:6px; margin:5px; 
+          font-size:20px; transition:background-color 0.3s;">
+    <i class="fab fa-twitter"></i>
+</a>
+
 </div>
 
   </div>
