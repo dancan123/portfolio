@@ -1721,3 +1721,66 @@ body {
     padding: 30px 10px;
   }
 }
+
+
+
+
+/* Floating Navigation */
+.floating-nav {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  z-index: 1000;
+}
+
+/* Circular icon button */
+.menu-item {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 102, 255, 0.1);
+  border: 1px solid #007bff;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+  background: #007bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Label - hidden by default */
+.menu-item::after {
+  content: attr(data-label);
+  position: absolute;
+  left: 60px;
+  background: rgba(0, 102, 255, 0.95);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-10px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+/* Show only on hover */
+.menu-item:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
