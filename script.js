@@ -238,3 +238,17 @@ console.log('%cPortfolio Loaded Successfully! 🚀', 'color:#00aaff;font-weight:
 
 
 
+function viewCertificate(id) {
+  const certs = {
+    ibm: "https://www.coursera.org/account/accomplishments/certificate/ibm-example",
+    ml: "https://www.coursera.org/account/accomplishments/certificate/ml-example",
+    google: "https://www.coursera.org/account/accomplishments/certificate/google-example",
+    web: "https://www.freecodecamp.org/certification/example"
+  };
+
+  if (certs[id]) {
+    window.open(certs[id], "_blank");
+  } else {
+    alert("Certificate link not available yet!");
+  }
+}
