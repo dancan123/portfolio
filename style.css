@@ -1854,5 +1854,57 @@ body {
   color: #fff;
 }
 
+/*Address Box */
+.address-card {
+  position:absolute;
+  top: 0px;              /* distance from the top */
+  right: -180px;            /* distance from the right */
+  background: #ffffff;
+  color: #023e8a;
+  border: 1px solid #0077b6;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 119, 182, 0.2);
+  padding: 10px 5px;
+  width: 320px;
+  max-width: 150%;
+  font-family: 'Poppins', sans-serif;
+  z-index: 999;           /* keeps it above other elements */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.address-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 119, 182, 0.3);
+}
+
+.address-card h3 {
+  color: #0077b6;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #0077b6;
+  padding-bottom: 5px;
+}
+
+.address-card p {
+  margin: 8px 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.address-card a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.address-card a:hover {
+  text-decoration: underline;
+}
+
+.address-card i {
+  color: #0077b6;
+  font-size: 1.1rem;
+}
 
 
