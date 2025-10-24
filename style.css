@@ -485,15 +485,13 @@ margin-bottom: -10%;
 /* ===== About Section ===== */
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
     margin-bottom: 4rem;
-    margin-left: 80px;
 }
 
 .about-card {
     text-align: center;
-    margin-left: 30px;
 }
 
 .about-card-icon {
@@ -506,7 +504,6 @@ margin-bottom: -10%;
     background: linear-gradient(135deg, var(--primary), var(--primary-light));
     border-radius: 16px;
     color: white;
-    
 }
 
 .about-card h3 {
@@ -526,7 +523,6 @@ margin-bottom: -10%;
     border: 1px solid var(--glass-border);
     border-radius: 20px;
     padding: 3rem;
-    margin-left: 60px;
 }
 
 .skills-title {
@@ -1559,42 +1555,6 @@ img {
 .hero-title {
   font-size: 2rem;
 }
-.hero-title {
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 3px solid #0077b6; /* typing cursor */
-  width: 0;
-  animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
-}
-
-/* Make "Hello, I am" bold and slightly larger */
-.hero-greeting {
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: #0077b6;
-}
-
-/* Keep the name very bold and larger */
-.hero-name {
-  font-weight: 800;
-  font-size: 2.5rem;
-  color: #0077b6;
-}
-
-/* Typing animation */
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-/* Blinking cursor */
-@keyframes blink {
-  from, to { border-color: transparent; }
-  50% { border-color: #0077b6; }
-}
-
 
 .hero-subtitle {
   font-size: 1.2rem;
@@ -1743,13 +1703,8 @@ body {
 
 .contact-left, .contact-right {
   flex: 1;
-  min-width: 100px;
-  top: 100px;
-  right: 70px;
-  width: 40%;
-  margin-left: 70px;
+  min-width: 300px;
 }
-
 
 .contact-left iframe {
   width: 100%;
@@ -1775,16 +1730,11 @@ body {
   position: fixed;
   top: 100px;
   left: 20px;
-  margin-left: 0%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
   z-index: 1000;
-  padding: 6px 10px;  /* smaller padding */
-  font-size: 0.85rem; /* smaller text */
-  /*transform: scale(0.8); /* reduce overall size to 80% */
-  /*transform-origin: top left; /* keeps position aligned */
 }
 
 /* Circular icon button */
